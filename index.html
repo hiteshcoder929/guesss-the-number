@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="game-card">
+      <div class="game-header">
+        <h1>Guess the Number</h1>
+        <p>Guess a number between 1 and 100</p>
+      </div>
+
+      <div class="game-body">
+        <label class="field-label" for="guess-input">Your Guess</label>
+        <input
+          id="guess-input"
+          class="guess-input"
+          type="number"
+          placeholder="Enter a number"
+          min="1"
+          max="100"
+          aria-label="Guess a number between 1 and 100"
+        />
+
+        <div class="button-row">
+          <button class="btn btn-primary" type="submit">Check</button>
+          <button class="btn btn-secondary" type="button">Restart</button>
+        </div>
+
+        <div class="feedback-panel">
+          <p class="feedback-text feedback-wrong">start game</p>
+          <p class="attempts-text">Attempts: <span></span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
